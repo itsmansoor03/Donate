@@ -1,0 +1,605 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\donate.bundle.scp.css",
+      "PackagePath": "staticwebassets\\donate.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\00.png",
+      "PackagePath": "staticwebassets\\img\\00.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\102e43f6-c56e-4726-80d4-e3ca695ad8f3_babagaa.jfif",
+      "PackagePath": "staticwebassets\\img\\102e43f6-c56e-4726-80d4-e3ca695ad8f3_babagaa.jfif"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\6adef122-945d-4fb6-b1bb-0490e61f59eb_o.jpg",
+      "PackagePath": "staticwebassets\\img\\6adef122-945d-4fb6-b1bb-0490e61f59eb_o.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\7777.jpg",
+      "PackagePath": "staticwebassets\\img\\7777.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\7888.png",
+      "PackagePath": "staticwebassets\\img\\7888.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\88.jpg",
+      "PackagePath": "staticwebassets\\img\\88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\888.jpg",
+      "PackagePath": "staticwebassets\\img\\888.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\D.JPG",
+      "PackagePath": "staticwebassets\\img\\D.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\abd2.jfif",
+      "PackagePath": "staticwebassets\\img\\abd2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\about.png",
+      "PackagePath": "staticwebassets\\img\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\aboutt.jpg",
+      "PackagePath": "staticwebassets\\img\\aboutt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\b-1.jpg",
+      "PackagePath": "staticwebassets\\img\\b-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\b-2.jpg",
+      "PackagePath": "staticwebassets\\img\\b-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\b-3.jpg",
+      "PackagePath": "staticwebassets\\img\\b-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\b88c19bc-d0b0-402b-bf02-28ddb3ab43fb_1234.png",
+      "PackagePath": "staticwebassets\\img\\b88c19bc-d0b0-402b-bf02-28ddb3ab43fb_1234.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\cl-1.jpg",
+      "PackagePath": "staticwebassets\\img\\cl-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\cl-2.jpg",
+      "PackagePath": "staticwebassets\\img\\cl-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\cl-3.jpg",
+      "PackagePath": "staticwebassets\\img\\cl-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\donate.jpg",
+      "PackagePath": "staticwebassets\\img\\donate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\donationImages\\7ece62ec-c183-41a6-81c3-ffc8faf77143_t-3.jpg",
+      "PackagePath": "staticwebassets\\img\\donationImages\\7ece62ec-c183-41a6-81c3-ffc8faf77143_t-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\ed8c330d-b750-4a08-aaf8-58deb29bb2fc_ii.jfif",
+      "PackagePath": "staticwebassets\\img\\ed8c330d-b750-4a08-aaf8-58deb29bb2fc_ii.jfif"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\el-1.jpg",
+      "PackagePath": "staticwebassets\\img\\el-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\el-2.jpg",
+      "PackagePath": "staticwebassets\\img\\el-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\el-3.jpg",
+      "PackagePath": "staticwebassets\\img\\el-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\ex-1.jpg",
+      "PackagePath": "staticwebassets\\img\\ex-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\ex-2.jpg",
+      "PackagePath": "staticwebassets\\img\\ex-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\facts.jpg",
+      "PackagePath": "staticwebassets\\img\\facts.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\fav.ico",
+      "PackagePath": "staticwebassets\\img\\fav.ico"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\fr-1.jpg",
+      "PackagePath": "staticwebassets\\img\\fr-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\fr-2.jpg",
+      "PackagePath": "staticwebassets\\img\\fr-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\fr-3.jpg",
+      "PackagePath": "staticwebassets\\img\\fr-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\m-1.jpg",
+      "PackagePath": "staticwebassets\\img\\m-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\m-2.jpg",
+      "PackagePath": "staticwebassets\\img\\m-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\m-3.jpg",
+      "PackagePath": "staticwebassets\\img\\m-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\mansoor.jfif",
+      "PackagePath": "staticwebassets\\img\\mansoor.jfif"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\p-1.jpg",
+      "PackagePath": "staticwebassets\\img\\p-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\p-2.jpg",
+      "PackagePath": "staticwebassets\\img\\p-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\p-3.jpg",
+      "PackagePath": "staticwebassets\\img\\p-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\page-header.jpg",
+      "PackagePath": "staticwebassets\\img\\page-header.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\page-headerr.jpg",
+      "PackagePath": "staticwebassets\\img\\page-headerr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\ppgg.png",
+      "PackagePath": "staticwebassets\\img\\ppgg.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\s-1.jpg",
+      "PackagePath": "staticwebassets\\img\\s-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\s-2.jpg",
+      "PackagePath": "staticwebassets\\img\\s-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\s-3.jpg",
+      "PackagePath": "staticwebassets\\img\\s-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-01.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-02.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-1.JPG",
+      "PackagePath": "staticwebassets\\img\\slider-1.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-1.png",
+      "PackagePath": "staticwebassets\\img\\slider-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-11.jpg",
+      "PackagePath": "staticwebassets\\img\\slider-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\slider-2.JPG",
+      "PackagePath": "staticwebassets\\img\\slider-2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\t-1.jpg",
+      "PackagePath": "staticwebassets\\img\\t-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\t-2.jpg",
+      "PackagePath": "staticwebassets\\img\\t-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\img\\t-3.jpg",
+      "PackagePath": "staticwebassets\\img\\t-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\js\\firebase.js",
+      "PackagePath": "staticwebassets\\js\\firebase.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\counterup\\counterup.min.js",
+      "PackagePath": "staticwebassets\\lib\\counterup\\counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\backup.txt",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\backup.txt"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\lib\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\parallax\\parallax.min.js",
+      "PackagePath": "staticwebassets\\lib\\parallax\\parallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\gts\\OneDrive\\Desktop\\mydotnetprojects\\donate\\donate\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.donate.props",
+      "PackagePath": "build\\donate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.donate.props",
+      "PackagePath": "buildMultiTargeting\\donate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.donate.props",
+      "PackagePath": "buildTransitive\\donate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.donate.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

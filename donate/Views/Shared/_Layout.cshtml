@@ -1,0 +1,279 @@
+﻿@*@using Microsoft.AspNetCore.Mvc.Localization*@
+@*@inject IViewLocalizer Localizer*@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@inject IHttpContextAccessor HttpContextAccessor
+@using donate.Helper
+@{
+    string fullName = SessionHelper.GetUserName(HttpContextAccessor.HttpContext);
+    var userInitial ="N";
+    if (!string.IsNullOrEmpty(fullName))
+    {   
+         userInitial = fullName.Substring(0, 1);
+    }
+    
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <link href="img/fav.ico" rel="icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <base href="~/">
+
+    <!-- Favicon -->
+    <link href="img/fav.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            width: 250px;
+            background: #343a40;
+            overflow-y: auto;
+            transition: left 0.3s ease;
+            z-index: 1050;
+        }
+
+        .side-menu.active {
+            left: 0;
+        }
+
+        .side-menu .nav-link {
+            color: #fff;
+        }
+
+        .side-menu .close-btn {
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: right;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+
+
+
+
+            <a asp-controller="Home" asp-action="Index" class="navbar-brand">Donate</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+
+                    <!-- زر القائمة الجانبية -->
+                    <div class="position-fixed" style="top: 10px; left: 10px; z-index: 1100;">
+                        <button class="btn btn-dark" id="toggleMenu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
+                    <a asp-controller="Home" asp-action="about" class="nav-item nav-link">About</a>
+                    <a asp-controller="Home" asp-action="Service" class="nav-item nav-link">Services</a>
+                    <a asp-controller="Home" asp-action="Team" class="nav-item nav-link">Team</a>
+                    <a asp-controller="Home" asp-action="Donate" class="nav-item nav-link">Donate</a>
+                    <a asp-controller="Home" asp-action="Requests" class="nav-link">
+                        Requests
+                        @if (ViewBag.RequestCount > 0)
+                        {
+                            <span class="badge badge-light">@ViewBag.RequestCount</span>
+                        }
+                    </a>
+
+                    <a asp-controller="Home" asp-action="Emergency" class="nav-item nav-link">Emergency</a>
+                    <b>@Localizer["Learn About Us"]</b>
+                    <form method="post" asp-controller="Language" asp-action="SetLanguage">
+                        <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                        <button type="submit" name="culture" value="en" class="btn btn-link">English</button>
+                        <button type="submit" name="culture" value="ar" class="btn btn-link">العربية</button>
+                    </form>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- القائمة الجانبية -->
+    <div class="side-menu bg-dark" id="sideMenu">
+        <div class="close-btn" id="closeMenu">&times;</div>
+        <nav class="nav flex-column">
+
+           
+                <div class="user-icon" onmouseover="showFullName()" onmouseout="hideFullName()">
+                <span id="userInitial">@userInitial</span>
+                <span id="fullName" class="hidden">@fullName</span>
+            </div> 
+            
+           
+            <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+            <a asp-controller="Home" asp-action="about" class="nav-link">About</a>
+            <a asp-controller="Home" asp-action="Service" class="nav-link">Services</a>
+            <a asp-controller="Home" asp-action="Team" class="nav-link">Team</a>
+
+            <a asp-controller="Home" asp-action="Donate" class="nav-link">Donate</a>
+            <a asp-controller="Home" asp-action="Requests" class="nav-link">Requests</a>
+            <a asp-controller="Home" asp-action="Emergency" class="nav-link">Emergency</a>
+
+        </nav>
+    </div>
+
+
+
+
+
+
+    <main>
+        @RenderBody()
+    </main>
+
+
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - donate - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        // تفعيل وإغلاق القائمة الجانبية عند النقر على الزر
+        document.getElementById('toggleMenu').addEventListener('click', function () {
+            const sideMenu = document.getElementById('sideMenu');
+            sideMenu.classList.toggle('active');
+        });
+
+        document.getElementById('closeMenu').addEventListener('click', function () {
+            document.getElementById('sideMenu').classList.remove('active');
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                    <h2>Our Head Office</h2>
+                    <p><i class="fa fa-map-marker-alt"></i> Irbid, Jordan</p>
+                    <p><i class="fa fa-phone-alt"></i> +962 780 1613 82</p>
+                    <p><i class="fa fa-envelope"></i> donate@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
+                    <a asp-controller="Home" asp-action="about" class="nav-item nav-link">About Us</a>
+                    <a asp-controller="Home" asp-action="Service" class="nav-item nav-link">Services</a>
+                    <a asp-controller="Home" asp-action="Team" class="nav-item nav-link">Team</a>
+                    <a asp-controller="Home" asp-action="Donate" class="nav-item nav-link">Donate</a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 d-flex justify-content-end flex-wrap">
+                <div class="footer-images">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 mb-4">
+                            <img src="img/88.jpg" class="img-fluid" alt="Image 1">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-4">
+                            <img src="img/7777.jpg" class="img-fluid" alt="Image 2">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-4">
+                            <img src="img/about.jpg" class="img-fluid" alt="Image 3">
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-4">
+                            <img src="img/D.jpg" class="img-fluid" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Donate 2024</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Designed By </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+<!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</html>

@@ -1,0 +1,17 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@using donate.Helper
+
+@{
+    string userName = SessionHelper.GetUserName(HttpContextAccessor.HttpContext);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Username</title>
+</head>
+<body>
+    <h1>Welcome, @userName!</h1>
+</body>
+</html>

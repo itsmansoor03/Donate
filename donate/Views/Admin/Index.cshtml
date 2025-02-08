@@ -1,0 +1,237 @@
+﻿@model donate.Controllers.AdminViewModel
+@{
+    ViewData["Title"] = "Admin Page";
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+<div class="container mt-5">
+    <h1 class="text-center">Admin Panel - University Shop</h1>
+    <p class="text-muted text-center">Manage Categories, Customers, and Products efficiently.</p>
+    <hr />
+
+    <!-- Manage Categories -->
+    <div class="mb-5">
+        <h2>Categories</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model.Categories)
+                {
+                    <tr>
+                        <td>@category.Id</td>
+                        <td>@category.Name</td>
+                        <td>
+                            <!-- Update Form -->
+                            <form asp-action="UpdateCategory" method="post" class="d-inline">
+                                <input type="hidden" name="Id" value="@category.Id" />
+                                <input type="text" name="Name" value="@category.Name" class="form-control d-inline w-auto" />
+                                <button class="btn btn-warning btn-sm">Update</button>
+                            </form>
+                            <!-- Delete Form -->
+                            <form asp-action="DeleteCategory" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@category.Id" />
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Add Category -->
+        <h4>Add New Category</h4>
+        <form asp-action="AddCategory" method="post">
+            <div class="mb-3">
+                <input type="text" name="Name" class="form-control" placeholder="Category Name" required />
+                <input type="text" name="Description" class="form-control" placeholder="Category Description" required />
+                <input type="text" name="CategoryIcon" class="form-control" placeholder="Category CategoryIcon" required />
+
+
+            </div>
+            <button type="submit" class="btn btn-primary">Add Category</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <!-- Manage Customers -->
+    <div class="mb-5">
+        <h2>Customers</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Username</td>
+                        <td>@user.Email</td>
+                        <td>@user.Address</td>
+                        <td>@user.Phone</td>
+                        <td>@user.UserType</td>
+                        <td>
+                            <!-- Delete Form -->
+                            <form asp-action="DeleteUser" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@user.Id" />
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Add Customer -->
+        <h4>Add New User</h4>
+        <form asp-action="AddUser" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" name="Username" class="form-control" placeholder="User name" required />
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="email" name="Email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" name="Phone" class="form-control" placeholder="Phone" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" name="Address" class="form-control" placeholder="Address" required />
+            </div>
+            <div class="mb-3">
+
+                <div>
+                    <!-- زر اختيار Donor -->
+                    <input type="radio" name="UserType" id="donor" value="Donor" />
+                    <label for="donor">Donor</label>
+                </div>
+                <div>
+                    <!-- زر اختيار Beneficiary -->
+                    <input type="radio" name="UserType" id="beneficiary" value="Beneficiary" />
+                    <label for="beneficiary">Beneficiary</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="Password" class="form-control" placeholder="Password" required />
+                </div>
+            <button type="submit" class="btn btn-primary">Add User</button>
+
+        </form>
+    </div>
+
+    <hr />
+
+    <!-- Manage Products -->
+    <div class="mb-5">
+        <h2>Donations</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var donation in Model.Donations)
+                {
+                    <tr>
+                        <td>@donation.Id</td>
+                        <td>@donation.Name</td>
+                        <td>@donation.Description</td>
+                        <td>@donation.DonationStatus</td>
+                        <td>@donation.Category.Name</td>
+                        <td>
+                           
+                            <!-- Delete Form -->
+                            <form asp-action="DeleteDonation" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@donation.Id" />
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["Message"]
+            </div>
+        }
+        <!-- Add Product -->
+        <h4>Add New Product</h4>
+        <form asp-action="AddDonation" method="post">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <input type="text" name="Name" class="form-control" placeholder="Donation Name" required />
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" name="Description" class="form-control" placeholder="Description" />
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text"  name="Image" class="form-control" placeholder="Image" required />
+                </div>
+                
+                <div class="col-md-4 mb-3">
+
+                    <div>
+                        <!-- زر اختيار Donor -->
+                        <input type="radio" name="DonationStatus" id="Available" value="Available" />
+                        <label for="donor">Available</label>
+                    </div>
+                    <div>
+                        <!-- زر اختيار Beneficiary -->
+                        <input type="radio" name="DonationStatus" id="Requested" value="Requested" />
+                        <label for="beneficiary">Requested</label>
+                    </div>
+                    
+                    
+            </div>
+            <div class="mb-3">
+                    <select name="UserId" class="form-select" required>
+                    <option value="" disabled selected>Select user</option>
+                    @foreach (var category in Model.Users)
+                    {
+                        <option value="@category.Id">@category.Username</option>
+                    }
+                </select>
+            </div>
+                <div class="mb-3">
+                    <select name="CategoryId" class="form-select" required>
+                        <option value="" disabled selected>Select Category</option>
+                        @foreach (var item in Model.Categories)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+</div>

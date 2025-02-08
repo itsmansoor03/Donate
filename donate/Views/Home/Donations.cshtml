@@ -1,0 +1,126 @@
+﻿@model List<Donation>
+@{
+    int? currentUserId = Context.Session.GetInt32("UserId");
+    string? currentUserType = Context.Session.GetString("usertype");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Donations</title>
+</head>
+<body>
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Donations</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Add Donation Button and Form -->
+    @if (currentUserType == "Donor")
+    {
+        <div class="container mt-4">
+            <button class="btn btn-primary mt-4" id="show-form-btn" onclick="toggleForm()">Add a Donation</button>
+        </div>
+        <div id="donation-form-container" class="container mt-4" style="display: none;">
+            <h3>Donate Furniture</h3>
+            <form method="post" asp-action="AddDonation" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="furniture-name">Name</label>
+                    <input type="text" name="Name" class="form-control" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="furniture-description">Description</label>
+                    <textarea class="form-control" name="Description" id="furniture-description" rows="3" placeholder="Enter description"></textarea>
+                </div>
+                <div>
+                    <input type="hidden" name="UserId" value="@currentUserId" />
+                    <input type="hidden" name="CategoryId" value="@ViewBag.CategoryId" />
+                    <input type="hidden" name="DonationStatus" value="Available" />
+                </div>
+                <div class="form-group">
+                    <label for="furniture-image">Upload Image</label>
+                    <input type="file" name="Image" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Add Donation</button>
+            </form>
+        </div>
+    }
+
+    <!-- Check for available donations -->
+    @if (!Model.Any())
+    {
+        <div class="container mt-4">
+            <p class="alert alert-info">@ViewBag.Message</p>
+        </div>
+    }
+    else
+    {
+        <!-- Donation Cards Section -->
+        <div id="donation-cards-container" class="container mt-4">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="@item.Image" alt="@item.Name Image">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@item.Description</p>
+                                @* <p class="card-text"><strong>Donor:</strong> @item.User.Username</p>*@
+                                <p class="card-text"><strong>Location:</strong> @item.User.Address</p>
+                                @*  <p class="card-text"><strong>Phone:</strong> @item.User.Phone</p>*@
+
+                                @if (item.UserId == currentUserId && currentUserType == "Donor")
+                                {
+                                    <form asp-action="RemoveDonation" method="post">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <button class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
+                                }
+                                @if ((item.DonationStatus == "Available" || item.DonationStatus == "Pending") && currentUserType == "Beneficiary")
+                                {
+                                    <div>
+                                        <button class="btn btn-success btn-sm" onclick="showRequestForm(@item.Id)">Request</button>
+                                    </div>
+                                    <div id="requestForm-@item.Id" style="display:none; margin-top:10px;">
+                                        <form asp-action="RequestDonation" method="post">
+                                            <input type="hidden" name="id" value="@item.Id" />
+                                            <div class="form-group">
+                                                <textarea name="Requestdetils" class="form-control" placeholder="Enter request details..." rows="3" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-sm">Submit Request</button>
+                                        </form>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    <script>
+        function showRequestForm(itemId) {
+            const form = document.getElementById(`requestForm-${itemId}`);
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Toggle form visibility
+        function toggleForm() {
+            var form = document.getElementById('donation-form-container');
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

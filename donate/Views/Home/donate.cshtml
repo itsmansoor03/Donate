@@ -1,0 +1,96 @@
+﻿@model List<Category>
+@{
+    var userInitial = ViewData["UserInitial"];
+    var fullName = ViewData["UserName"];
+}
+
+
+@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Donate</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    </head>
+
+    <body>
+          
+        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Donate Now </h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+    <div class="user-icon" onmouseover="showFullName()" onmouseout="hideFullName()">
+        <span id="userInitial">@userInitial</span>
+        <span id="fullName" class="hidden">@fullName</span>
+    </div>
+        
+        <div class="service">
+            <div class="container">
+            </div>
+            <div class="row">
+            @foreach(var item in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <a asp-controller="Home" asp-action="Donations" asp-route-categoryId="@item.Id" >
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="@item.CategoryIcon"></i>  <!-- أيقونة ملابس من FontAwesome -->
+                            </div>
+                            
+                            <div class="service-text">
+                                <h3>@item.Name</h3>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+           
+               
+                </div>
+            </div>
+        </div>
+        <div class="section-header text-center">
+        </div>
+        
+        
+
+
+
+
+<style>
+    /* Footer Image Section */
+.footer .row img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+</style>
+
+       
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        
+    </body>
+</html>

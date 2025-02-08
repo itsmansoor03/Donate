@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Emergency Donation: Help a Family Who Lost Their Home</title>
+   
+    </head>
+
+    <body>
+        
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Emergency: Family Lost Their Home in a Fire</h2>
+                        <p>We urgently need your help! A family has lost their home in a devastating fire and needs immediate assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Donation Section -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>How Can You Help?</h3>
+                    <p>We are raising donations to help a family that lost everything in a fire. You can donate furniture or items that will help them rebuild their life.</p>
+                    <p>Please fill in your details and let us know what you can donate.</p>
+                    
+                    <!-- Donation Form -->
+                    <form id="donationForm">
+                        <div class="form-group">
+                            <label for="donorName">Your Name</label>
+                            <input type="text" class="form-control" id="donorName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorPhone">Your Phone Number</label>
+                            <input type="tel" class="form-control" id="donorPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorLocation">Your Location</label>
+                            <input type="text" class="form-control" id="donorLocation" placeholder="Enter your location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donatedItems">What Can You Donate?</label>
+                            <textarea class="form-control" id="donatedItems" rows="3" placeholder="Please describe the items you wish to donate (e.g., furniture, appliances, emergency, etc.)" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Donation</button>
+                    </form>
+
+                    <div id="donationDetails" class="mt-5" style="display: none;">
+                        <h4>Your Donation Information</h4>
+                        <p><strong>Name:</strong> <span id="displayName"></span></p>
+                        <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+                        <p><strong>Location:</strong> <span id="displayLocation"></span></p>
+                        <p><strong>Items to Donate:</strong> <span id="displayItems"></span></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Why Donate?</h3>
+                    <p>Your donations will go directly to helping this family rebuild their life. They have lost everything, and with your help, they can start over.</p>
+                    <ul>
+                        <li>Providing furniture and essential household items</li>
+                        <li>Rebuilding their home</li>
+                        <li>Supporting them with immediate needs like food and clothing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .footer .row img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+          
+        </style>
+
+        <script>
+            // JavaScript to handle form submission and display the information
+            document.getElementById('donationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevents form from submitting to a server
+
+                // Get the form input values
+                var name = document.getElementById('donorName').value;
+                var phone = document.getElementById('donorPhone').value;
+                var location = document.getElementById('donorLocation').value;
+                var items = document.getElementById('donatedItems').value;
+
+                // Display the entered information
+                document.getElementById('displayName').textContent = name;
+                document.getElementById('displayPhone').textContent = phone;
+                document.getElementById('displayLocation').textContent = location;
+                document.getElementById('displayItems').textContent = items;
+
+                // Show the donation details section
+                document.getElementById('donationDetails').style.display = 'block';
+
+
+
+
+
+                function saveDonation() {
+                    var name = document.getElementById('emergency-name').value;
+                    var description = document.getElementById('emergency-description').value;
+                    var userName = document.getElementById('user-name').value;
+                    var location = document.getElementById('user-location').value;
+                    var userPhone = document.getElementById('user-phone').value;
+                    var image = document.getElementById('emergency-image').files[0];
+                
+                    var reader = new FileReader();
+                    reader.onload = function(event) {
+                        var imageSrc = event.target.result;
+                
+                        // إعداد التبرع
+                        var donation = {
+                           
+                            donation: donation,
+                            userName: userName,
+                            location: location,
+                            phonenumber:phonenumber,
+                            isRemovable: true, 
+                            timestamp: firebase.firestore.FieldValue.serverTimestamp() 
+                        };
+                
+                        // تخزين التبرع في Firestore
+                        db.collection("Emergency").add(donation)
+                            .then((docRef) => {
+                                console.log("Donation added with ID: ", docRef.id);
+                                
+                                addDonationToPage(donation, true);
+                                toggleForm(); 
+                            })
+                            .catch((error) => {
+                                console.error("Error adding donation: ", error);
+                            });
+                    };
+                    reader.readAsDataURL(image);
+                }
+                
+            });
+        </script>
+    </body>
+</html>
